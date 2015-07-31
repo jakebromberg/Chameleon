@@ -40,7 +40,7 @@ class ChameleonTests: QuickSpec {
                 expect(responseData).to(beNil())
             }
 
-            it("should turn the data to nil") {
+            it("should return a data object that represent the string 'blankResponse'") {
                 expect(NSString(data: responseData ?? NSData(), encoding: NSUnicodeStringEncoding)).toEventually(equal("blankResponse"))
             }
 
