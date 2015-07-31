@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		857A43561B6C0266002ED155 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A43551B6C0266002ED155 /* AppDelegate.swift */; };
+		857A43581B6C0266002ED155 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A43571B6C0266002ED155 /* ViewController.swift */; };
+		857A435B1B6C0266002ED155 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857A43591B6C0266002ED155 /* Main.storyboard */; };
+		857A435D1B6C0266002ED155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 857A435C1B6C0266002ED155 /* Assets.xcassets */; };
+		857A43601B6C0266002ED155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857A435E1B6C0266002ED155 /* LaunchScreen.storyboard */; };
+		857A436B1B6C0266002ED155 /* ChameleonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A436A1B6C0266002ED155 /* ChameleonTests.swift */; };
+		857A43761B6C04F1002ED155 /* ChameleonURLCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A43751B6C04F1002ED155 /* ChameleonURLCache.swift */; };
+		C9800633F5CB5A19AA7C3D29 /* Pods_ChameleonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459C04607851A5C69DFF642C /* Pods_ChameleonTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		857A43671B6C0266002ED155 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 857A434A1B6C0266002ED155 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 857A43511B6C0266002ED155;
+			remoteInfo = Chameleon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		459C04607851A5C69DFF642C /* Pods_ChameleonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChameleonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		690648F92DEEF42580098F99 /* Pods-ChameleonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChameleonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChameleonTests/Pods-ChameleonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		857A43521B6C0266002ED155 /* Chameleon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chameleon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		857A43551B6C0266002ED155 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		857A43571B6C0266002ED155 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		857A435A1B6C0266002ED155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		857A435C1B6C0266002ED155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		857A435F1B6C0266002ED155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		857A43611B6C0266002ED155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		857A43661B6C0266002ED155 /* ChameleonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChameleonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		857A436A1B6C0266002ED155 /* ChameleonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChameleonTests.swift; sourceTree = "<group>"; };
+		857A436C1B6C0266002ED155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		857A43751B6C04F1002ED155 /* ChameleonURLCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChameleonURLCache.swift; sourceTree = "<group>"; };
+		D159F4B3A7D465068723C937 /* Pods-ChameleonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChameleonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChameleonTests/Pods-ChameleonTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		857A434F1B6C0266002ED155 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		857A43631B6C0266002ED155 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9800633F5CB5A19AA7C3D29 /* Pods_ChameleonTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E11239A3B17F2111F22CDB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				459C04607851A5C69DFF642C /* Pods_ChameleonTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		857A43491B6C0266002ED155 = {
+			isa = PBXGroup;
+			children = (
+				857A43541B6C0266002ED155 /* Chameleon */,
+				857A43691B6C0266002ED155 /* ChameleonTests */,
+				857A43531B6C0266002ED155 /* Products */,
+				FB732602D9D0A50FCD04CAA3 /* Pods */,
+				4E11239A3B17F2111F22CDB7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		857A43531B6C0266002ED155 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				857A43521B6C0266002ED155 /* Chameleon.app */,
+				857A43661B6C0266002ED155 /* ChameleonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		857A43541B6C0266002ED155 /* Chameleon */ = {
+			isa = PBXGroup;
+			children = (
+				857A43551B6C0266002ED155 /* AppDelegate.swift */,
+				857A43571B6C0266002ED155 /* ViewController.swift */,
+				857A43591B6C0266002ED155 /* Main.storyboard */,
+				857A435C1B6C0266002ED155 /* Assets.xcassets */,
+				857A435E1B6C0266002ED155 /* LaunchScreen.storyboard */,
+				857A43611B6C0266002ED155 /* Info.plist */,
+				857A43751B6C04F1002ED155 /* ChameleonURLCache.swift */,
+			);
+			path = Chameleon;
+			sourceTree = "<group>";
+		};
+		857A43691B6C0266002ED155 /* ChameleonTests */ = {
+			isa = PBXGroup;
+			children = (
+				857A436A1B6C0266002ED155 /* ChameleonTests.swift */,
+				857A436C1B6C0266002ED155 /* Info.plist */,
+			);
+			path = ChameleonTests;
+			sourceTree = "<group>";
+		};
+		FB732602D9D0A50FCD04CAA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				690648F92DEEF42580098F99 /* Pods-ChameleonTests.debug.xcconfig */,
+				D159F4B3A7D465068723C937 /* Pods-ChameleonTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		857A43511B6C0266002ED155 /* Chameleon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 857A436F1B6C0266002ED155 /* Build configuration list for PBXNativeTarget "Chameleon" */;
+			buildPhases = (
+				857A434E1B6C0266002ED155 /* Sources */,
+				857A434F1B6C0266002ED155 /* Frameworks */,
+				857A43501B6C0266002ED155 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chameleon;
+			productName = Chameleon;
+			productReference = 857A43521B6C0266002ED155 /* Chameleon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		857A43651B6C0266002ED155 /* ChameleonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 857A43721B6C0266002ED155 /* Build configuration list for PBXNativeTarget "ChameleonTests" */;
+			buildPhases = (
+				B5FDB135501E151D49F7E14F /* Check Pods Manifest.lock */,
+				857A43621B6C0266002ED155 /* Sources */,
+				857A43631B6C0266002ED155 /* Frameworks */,
+				857A43641B6C0266002ED155 /* Resources */,
+				2B3B8E2FE1BADA3FC54A3C6B /* Embed Pods Frameworks */,
+				7FF6113572B4726A3E1627C8 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				857A43681B6C0266002ED155 /* PBXTargetDependency */,
+			);
+			name = ChameleonTests;
+			productName = ChameleonTests;
+			productReference = 857A43661B6C0266002ED155 /* ChameleonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		857A434A1B6C0266002ED155 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Magic App Factory";
+				TargetAttributes = {
+					857A43511B6C0266002ED155 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					857A43651B6C0266002ED155 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 857A43511B6C0266002ED155;
+					};
+				};
+			};
+			buildConfigurationList = 857A434D1B6C0266002ED155 /* Build configuration list for PBXProject "Chameleon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 857A43491B6C0266002ED155;
+			productRefGroup = 857A43531B6C0266002ED155 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				857A43511B6C0266002ED155 /* Chameleon */,
+				857A43651B6C0266002ED155 /* ChameleonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		857A43501B6C0266002ED155 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				857A43601B6C0266002ED155 /* LaunchScreen.storyboard in Resources */,
+				857A435D1B6C0266002ED155 /* Assets.xcassets in Resources */,
+				857A435B1B6C0266002ED155 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		857A43641B6C0266002ED155 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B3B8E2FE1BADA3FC54A3C6B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChameleonTests/Pods-ChameleonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FF6113572B4726A3E1627C8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChameleonTests/Pods-ChameleonTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5FDB135501E151D49F7E14F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		857A434E1B6C0266002ED155 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				857A43761B6C04F1002ED155 /* ChameleonURLCache.swift in Sources */,
+				857A43581B6C0266002ED155 /* ViewController.swift in Sources */,
+				857A43561B6C0266002ED155 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		857A43621B6C0266002ED155 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				857A436B1B6C0266002ED155 /* ChameleonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		857A43681B6C0266002ED155 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 857A43511B6C0266002ED155 /* Chameleon */;
+			targetProxy = 857A43671B6C0266002ED155 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		857A43591B6C0266002ED155 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				857A435A1B6C0266002ED155 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		857A435E1B6C0266002ED155 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				857A435F1B6C0266002ED155 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		857A436D1B6C0266002ED155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		857A436E1B6C0266002ED155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		857A43701B6C0266002ED155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Chameleon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.magicappfactory.Chameleon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		857A43711B6C0266002ED155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Chameleon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.magicappfactory.Chameleon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		857A43731B6C0266002ED155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 690648F92DEEF42580098F99 /* Pods-ChameleonTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ChameleonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.magicappfactory.ChameleonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chameleon.app/Chameleon";
+			};
+			name = Debug;
+		};
+		857A43741B6C0266002ED155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D159F4B3A7D465068723C937 /* Pods-ChameleonTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ChameleonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.magicappfactory.ChameleonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chameleon.app/Chameleon";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		857A434D1B6C0266002ED155 /* Build configuration list for PBXProject "Chameleon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				857A436D1B6C0266002ED155 /* Debug */,
+				857A436E1B6C0266002ED155 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		857A436F1B6C0266002ED155 /* Build configuration list for PBXNativeTarget "Chameleon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				857A43701B6C0266002ED155 /* Debug */,
+				857A43711B6C0266002ED155 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		857A43721B6C0266002ED155 /* Build configuration list for PBXNativeTarget "ChameleonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				857A43731B6C0266002ED155 /* Debug */,
+				857A43741B6C0266002ED155 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 857A434A1B6C0266002ED155 /* Project object */;
+}
