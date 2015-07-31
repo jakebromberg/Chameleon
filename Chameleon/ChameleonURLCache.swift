@@ -11,8 +11,13 @@ import Foundation
 class ChameleonURLCache: NSURLCache {
 
     override func cachedResponseForRequest(request: NSURLRequest) -> NSCachedURLResponse? {
-        print(request)
-        return nil
+
+        let response = "blankResponse"
+        guard let responseData = response.dataUsingEncoding(NSUnicodeStringEncoding) else { return nil }
+
+        let urlResponse = NSURLResponse()
+        let cachedResponse = NSCachedURLResponse(response: urlResponse, data: responseData)
+        return cachedResponse
     }
 
 }

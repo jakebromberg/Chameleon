@@ -19,26 +19,29 @@ class ChameleonTests: QuickSpec {
 
         beforeEach {
             session = NSURLSession.chameleonSession()
-            responseData = NSData()
+            responseData = nil
         }
 
 
         context("test") {
 
             beforeEach {
-                let dataTask = session.dataTaskWithRequest(NSURLRequest()) {
+                let request = NSURLRequest(URL: NSURL(string: "https://www.magicappfactory.com")!)
+                let dataTask = session.dataTaskWithRequest(request) {
                     (data, response, error) -> Void in
                     responseData = data
+                    print("response? \(response)")
+                    print("error? \(error)")
                 }
                 dataTask.resume()
             }
 
-            it("should begin with non-nil data") {
-                expect(responseData).toNot(beNil())
+            it("should begin with nil data") {
+                expect(responseData).to(beNil())
             }
 
             it("should turn the data to nil") {
-                expect(responseData).toEventually(beNil())
+                expect(NSString(data: responseData ?? NSData(), encoding: NSUnicodeStringEncoding)).toEventually(equal("blankResponse"))
             }
 
         }
