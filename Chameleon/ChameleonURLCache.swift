@@ -23,11 +23,8 @@ class ChameleonURLCache: NSURLCache {
 }
 
 extension NSURLSession {
-    class func chameleonSession() -> NSURLSession {
-        return NSURLSession.chameleonSession(withDelegateQueue: nil)
-    }
 
-    class func chameleonSession(withDelegateQueue delegateQueue: NSOperationQueue?) -> NSURLSession {
+    class func chameleonSession(withDelegateQueue delegateQueue: NSOperationQueue? = nil) -> NSURLSession {
         return NSURLSession(configuration: NSURLSessionConfiguration.chameleonConfiguration(), delegate: nil, delegateQueue: delegateQueue)
     }
 

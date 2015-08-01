@@ -13,24 +13,24 @@ import Nimble
 class ChameleonTests: QuickSpec {
 
     override func spec() {
-        for _ in 0...500 {
-            runspec(NSURLSession.chameleonSession(withDelegateQueue: NSOperationQueue.mainQueue()))
+
+        let session = NSURLSession.chameleonSession(withDelegateQueue: NSOperationQueue.mainQueue())
+
+        for _ in 0...1500 {
+            runspec(withSession: session)
         }
     }
 
-    func runspec(withSession: NSURLSession) {
+    func runspec(withSession session: NSURLSession) {
 
-        let session = withSession
-        var responseData: NSData? = nil
-
-        beforeEach {
-            responseData = nil
-        }
 
 
         context("test") {
 
+            var responseData: NSData? = nil
+
             beforeEach {
+                responseData = nil
                 let request = NSURLRequest(URL: NSURL(string: "https://www.magicappfactory.com")!)
                 let dataTask = session.dataTaskWithRequest(request) {
                     (data, response, error) -> Void in
@@ -50,7 +50,7 @@ class ChameleonTests: QuickSpec {
             it("should return a data object that represent the string 'blankResponse'") {
                 expect(NSString(data: responseData ?? NSData(), encoding: NSUnicodeStringEncoding)).toEventually(equal("blankResponse"))
             }
-            
+
         }
         
     }
