@@ -13,12 +13,17 @@ import Nimble
 class ChameleonTests: QuickSpec {
 
     override func spec() {
+        for _ in 0...500 {
+            runspec(NSURLSession.chameleonSession(withDelegateQueue: NSOperationQueue.mainQueue()))
+        }
+    }
 
-        var session: NSURLSession! = nil
+    func runspec(withSession: NSURLSession) {
+
+        let session = withSession
         var responseData: NSData? = nil
 
         beforeEach {
-            session = NSURLSession.chameleonSession()
             responseData = nil
         }
 
@@ -30,8 +35,6 @@ class ChameleonTests: QuickSpec {
                 let dataTask = session.dataTaskWithRequest(request) {
                     (data, response, error) -> Void in
                     responseData = data
-                    print("response? \(response)")
-                    print("error? \(error)")
                 }
                 dataTask.resume()
             }
@@ -40,12 +43,16 @@ class ChameleonTests: QuickSpec {
                 expect(responseData).to(beNil())
             }
 
+            it("eventually not be nil") {
+                expect(responseData).toEventuallyNot(beNil())
+            }
+
             it("should return a data object that represent the string 'blankResponse'") {
                 expect(NSString(data: responseData ?? NSData(), encoding: NSUnicodeStringEncoding)).toEventually(equal("blankResponse"))
             }
-
+            
         }
-
+        
     }
     
 }
